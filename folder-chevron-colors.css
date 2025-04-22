@@ -1,0 +1,4 @@
+/* Default Obsidian folder chevrons (when not masked by PLN plugin) */
+.nav-folder-title .collapse-icon svg {
+  color: white !important;
+}

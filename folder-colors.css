@@ -1,0 +1,207 @@
+/* @settings
+name: Folder Color Settings
+id: folder-color-settings
+settings:
+  - id: folder-colors
+    title: Folder Colors
+    type: heading
+    level: 2
+    collapsed: true
+
+  - id: folder-text-color
+    title: Folder Text Color
+    type: variable-color
+    format: hex
+    default: "#FFFFFF"
+
+
+  - id: folder-chevron-color
+    title: Folder Chevron Color
+    type: variable-color
+    format: hex
+    default: "#B0B0B0"
+
+  - id: color-one
+    title: Color One
+    type: variable-color
+    format: hex
+    default: "#016764"
+
+  - id: color-two
+    title: Color Two
+    type: variable-color
+    format: hex
+    default: "#005958"
+
+  - id: color-three
+    title: Color Three
+    description: Used on dark theme
+    type: variable-color
+    format: hex
+    default: "#014848"
+
+  - id: color-four
+    title: Color Four
+    type: variable-color
+    format: hex
+    default: "#00312F"
+
+  - id: color-five
+    title: Color Five
+    type: variable-color
+    format: hex
+    default: "#522377"
+
+  - id: color-six
+    title: Color Six
+    type: variable-color
+    format: hex
+    default: "#36195B"
+
+  - id: color-seven
+    title: Color Seven
+    type: variable-color
+    format: hex
+    default: "#080B38"
+
+  - id: color-eight
+    title: Color Eight
+    type: variable-color
+    format: hex
+    default: "#133155"
+
+  - id: color-nine
+    title: Color Nine
+    type: variable-color
+    format: hex
+    default: "#254D70"
+
+  - id: color-ten
+    title: Color Ten
+    type: variable-color
+    format: hex
+    default: "#FC6E68"
+	
+*/
+:root {
+  --folder-color-1: #016764;
+  --folder-color-2: #005958;
+  --folder-color-3: #014848;
+  --folder-color-4: #00312F;
+  --folder-color-5: #522377;
+  --folder-color-6: #36195B;
+  --folder-color-7: #080B38;
+  --folder-color-8: #133155;
+  --folder-color-9: #254D70;
+  --folder-color-10: #FC6E68;
+}
+/* Folder Colors and Chevron Customization */
+
+/* Folder Text Color (Title) */
+.nav-files-container > div > .nav-folder > .nav-folder-title {
+    color: var(--folder-text-color);
+}
+
+/* Folder Chevron (Expand/Collapse) Icon Color */
+.nav-files-container > div > .nav-folder .collapse-icon svg {
+    color: var(--folder-chevron-color) !important;
+}
+
+/* Optional: Highlight folder text on hover */
+.nav-files-container > div > .nav-folder > .nav-folder-title:hover {
+    color: var(--folder-text-color);
+}
+
+/* Optional: Change chevron color when hovering over the folder */
+.nav-files-container > div > .nav-folder > .collapse-icon:hover svg {
+    color: var(--folder-chevron-color);
+    background-color: var(--folder-chevron-color);
+}
+
+/* Folder background and indentation lines */
+.nav-files-container > div > .nav-folder:nth-child(9n+2) > .tree-item-self {
+    background-color: var(--color-one);
+}
+.nav-files-container > div > .nav-folder:nth-child(9n+2) .tree-item-children {
+    --nav-indentation-guide-color: var(--color-one);
+	--nav-indentation-guide-width: 5px;
+}
+
+.nav-files-container > div > .nav-folder:nth-child(9n+3) > .tree-item-self {
+    background-color: var(--color-two);
+}
+.nav-files-container > div > .nav-folder:nth-child(9n+3) .tree-item-children {
+    --nav-indentation-guide-color: var(--color-two);
+	--nav-indentation-guide-width: 5px;
+}
+
+.nav-files-container > div > .nav-folder:nth-child(9n+4) > .tree-item-self {
+    background-color: var(--color-three);
+}
+.nav-files-container > div > .nav-folder:nth-child(9n+4) .tree-item-children {
+    --nav-indentation-guide-color: var(--color-three);
+	--nav-indentation-guide-width: 5px;
+}
+
+.nav-files-container > div > .nav-folder:nth-child(9n+5) > .tree-item-self {
+    background-color: var(--color-four);
+}
+.nav-files-container > div > .nav-folder:nth-child(9n+5) .tree-item-children {
+    --nav-indentation-guide-color: var(--color-four);
+	--nav-indentation-guide-width: 5px;
+}
+
+.nav-files-container > div > .nav-folder:nth-child(9n+6) > .tree-item-self {
+    background-color: var(--color-five);
+}
+.nav-files-container > div > .nav-folder:nth-child(9n+6) .tree-item-children {
+    --nav-indentation-guide-color: var(--color-five);
+	--nav-indentation-guide-width: 5px;
+}
+
+.nav-files-container > div > .nav-folder:nth-child(9n+7) > .tree-item-self {
+    background-color: var(--color-six);
+}
+.nav-files-container > div > .nav-folder:nth-child(9n+7) .tree-item-children {
+    --nav-indentation-guide-color: var(--color-six);
+	--nav-indentation-guide-width: 5px;
+}
+
+.nav-files-container > div > .nav-folder:nth-child(9n+8) > .tree-item-self {
+    background-color: var(--color-seven);
+}
+.nav-files-container > div > .nav-folder:nth-child(9n+8) .tree-item-children {
+	--nav-indentation-guide-color: var(--color-seven);
+	--nav-indentation-guide-width: 5px;
+}
+
+.nav-files-container > div > .nav-folder:nth-child(9n+9) > .tree-item-self {
+    background-color: var(--color-eight);
+}
+.nav-files-container > div > .nav-folder:nth-child(9n+9) .tree-item-children {
+    --nav-indentation-guide-color: var(--color-eight);
+	--nav-indentation-guide-width: 5px;
+}
+
+.nav-files-container > div > .nav-folder:nth-child(9n+10) > .tree-item-self {
+    background-color: var(--color-nine);
+}
+.nav-files-container > div > .nav-folder:nth-child(9n+10) .tree-item-children {
+    --nav-indentation-guide-color: var(--color-nine);
+	--nav-indentation-guide-width: 5px;
+}
+
+/* Lock functionality (for reference) */
+.lock * {
+    -webkit-user-modify: read-only !important;
+}
+.lock .metadata-content {
+    pointer-events: none;
+}
+.workspace-leaf:has(.lock) .clickable-icon.view-action[aria-label^="Current view:"] {
+    -webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-lock'%3E%3Crect width='18' height='11' x='3' y='11' rx='2' ry='2'/%3E%3Cpath d='M7 11V7a5 5 0 0 1 10 0v4'/%3E%3C/svg%3E");
+    background-color: var(--icon-color);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    pointer-events:none
+}
